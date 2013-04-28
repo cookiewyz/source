@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<menu xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item   
+        android:id="@+id/refresh_localvideo"   
+        android:title="@string/menu_item_refresh" 
+        android:icon="@drawable/icon_check_update"
+	/>
+    <item   
+        android:id="@+id/upadte_ssvideo"   
+        android:title="@string/menu_item_checkupdate" 
+        android:icon="@drawable/icon_check_updates"
+	/>
+    <item   
+        android:id="@+id/about_ssvideo"   
+        android:title="@string/menu_item_about" 
+        android:icon="@drawable/icon_about"
+	/> 
+</menu>

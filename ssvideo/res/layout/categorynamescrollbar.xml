@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/view_cateNamefirstlevel" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="vertical" android:background="@drawable/ranks_view_subject_back">
+  
+    	<HorizontalScrollView android:id="@+id/horizontalScrollViewfirstlevel" 
+    		android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="none">
+        	<LinearLayout android:id="@+id/layout_cateNamefirstlevel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+    	</HorizontalScrollView>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/view_cateNamesecondlevel" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="vertical" android:background="@drawable/ranks_view_subject_back">
+    	
+    	<HorizontalScrollView android:id="@+id/horizontalScrollViewsecondlevel" 
+    		android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="none">
+        	<LinearLayout android:id="@+id/layout_cateNamesecondlevel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+    	</HorizontalScrollView>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/view_cateNamethirdlevel" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="vertical" android:background="@drawable/ranks_view_subject_back">
+    	
+    	<HorizontalScrollView android:id="@+id/horizontalScrollViewthirdlevel" 
+    		android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="none">
+        	<LinearLayout android:id="@+id/layout_cateNamethirdlevel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+    	</HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

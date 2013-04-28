@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="#C0C0C0"
+  >
+  <LinearLayout 
+	  android:orientation="vertical"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:layout_margin="5dp"
+	  android:background="#000000"
+  
+  >
+	  <TextView 
+	  	android:id="@+id/dialog_detail_title"
+	  	android:layout_width="300dp"
+	  	android:layout_height="wrap_content"
+	  	android:textSize="20sp"
+	  	android:textColor="#FFFFFF"
+	  />
+	  <TextView 
+	  	android:id="@+id/dialog_detail_subject"
+	  	android:layout_width="300dp"
+	  	android:layout_height="wrap_content"
+	  	android:textSize="16sp"
+	  	android:textColor="#FFFFFF"
+	  />
+	  <TextView 
+	  	android:id="@+id/dialog_detail_score"
+	  	android:layout_width="300dp"
+	  	android:layout_height="wrap_content"
+	  	android:textSize="16sp"
+	  	android:textColor="#FFFFFF"
+	  />
+	  <TextView 
+	  	android:id="@+id/dialog_detail_score_count"
+	  	android:layout_width="300dp"
+	  	android:layout_height="wrap_content"
+	  	android:layout_marginBottom="10dp"
+	  	android:textSize="16sp"
+	  	android:textColor="#FFFFFF"
+	  />
+	  <TextView 
+	  	android:id="@+id/dialog_detail_speaker"
+	  	android:layout_width="300dp"
+	  	android:layout_height="wrap_content"
+	  	android:layout_marginTop="10dp"
+	  	android:textSize="16sp"
+	  	android:textColor="#FFFFFF"
+	  />
+	  <TextView 
+	  	android:id="@+id/dialog_detail_abstract"
+	  	android:layout_width="300dp"
+	  	android:layout_height="wrap_content"
+	  	android:textSize="16sp"
+	  	android:textColor="#FFFFFF"
+	  />
+  </LinearLayout>
+    
+</LinearLayout>

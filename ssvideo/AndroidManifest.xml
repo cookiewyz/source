@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.chaoxing.video"
+      android:versionCode="12737"
+      android:versionName="1.6.5">
+    <!-- android:targetSdkVersion="17" -->
+    <uses-sdk
+        android:minSdkVersion="8"
+    />
+    
+    <permission android:name="chaoxing.permission.SENDMAIL" android:protectionLevel="normal"/>
+    <permission android:name="chaoxing.permission.STARTACTIVITY" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="chaoxing.permission.STARTACTIVITY"/>
+	<uses-permission android:name="chaoxing.permission.SENDMAIL"/>
+
+	<supports-screens
+    	android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true" />
+	<permission android:name="chaoxing.per"></permission>
+	
+    <application android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar"
+    	android:icon="@drawable/icon_h"
+    	android:name="com.chaoxing.video.SsvideoRoboApplication"
+    	android:allowBackup="true">
+        <activity android:name="com.chaoxing.video.SsvideoActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+				android:clearTaskOnLaunch="true" 
+				android:launchMode="singleInstance" 
+				android:permission="chaoxing.permission.STARTACTIVITY">
+            <intent-filter>
+                <action android:name="com.chaoxing.video.SsvideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.chaoxing.video.Splash"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+				<action android:name="com.chaoxing.video.Splash" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+        </activity>
+        
+        <activity android:name="com.chaoxing.video.SsvideoPlayerActivity"
+			android:label="@string/app_name" android:configChanges="orientation|screenSize"
+			android:launchMode="singleInstance" android:permission="chaoxing.permission.STARTACTIVITY">
+			<intent-filter>
+				<action android:name="com.chaoxing.video.SsvideoPlayerActivity"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<data android:mimeType="video/mp4"></data>
+				<data android:mimeType="video/3gpp"></data>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:mimeType="application/mp4" android:pathPattern=".*\\.mp4"
+					android:scheme="http"></data>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="com.chaoxing.download.FileDownloadActivity" package="com.chaoxing.download"
+			android:label="@string/app_name" android:configChanges="orientation|keyboardHidden|screenSize"
+			android:launchMode="singleInstance">
+		</activity>
+        
+        <receiver android:name="com.chaoxing.video.VideoWidget" android:label="@string/widget_1"
+            	  >
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/video_widget" />
+		</receiver>
+		<receiver android:name="com.chaoxing.video.VideoWidget_7_4" android:label="@string/widget_2"
+		    	  >
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/video_widget_7_4"/>
+		</receiver>
+    
+        <receiver android:name="com.chaoxing.video.VideoWidget_5_3" android:label="@string/widget_5_3" 
+            	  >
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/video_widget_5_3"/>
+		</receiver>
+        <receiver android:name="com.chaoxing.video.VideoWidget_5_2" android:label="@string/widget_5_2"
+            	  >
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/video_widget_5_2"/>
+		</receiver>
+		<receiver android:name="com.chaoxing.video.VideoWidget_6_4" android:label="@string/widget_6_4"
+            	  >
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/video_widget_6_4" />
+		</receiver>
+		<receiver android:name="com.chaoxing.video.VideoWidget_8_5" android:label="@string/widget_8_5">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/video_widget_8_5" />
+		</receiver>
+        
+		<service android:exported="true" android:name="com.chaoxing.download.FileService" package="com.chaoxing.download"
+			android:launchMode="singleInstance" android:permission="chaoxing.permission.SENDMAIL">  
+			<intent-filter>  
+				<action android:name="com.chaoxing.download.FileService" package="com.chaoxing.download"/>  
+			</intent-filter>  
+		</service> 
+		
+		<service android:name="com.chaoxing.video.UpdateService" android:permission="chaoxing.permission.SENDMAIL">
+            <intent-filter >
+                <action android:name="com.chaoxing.video.UpdateService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.chaoxing.video.CoverService" android:permission="chaoxing.permission.SENDMAIL">
+            <intent-filter>
+                <action android:name="com.chaoxing.video.CoverService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance"
+            android:name="com.chaoxing.video.UpdateActivity"
+            android:theme="@android:style/Theme.Dialog" android:permission="chaoxing.permission.SENDMAIL"
+            >
+            <intent-filter >
+                <action android:name="com.chaoxing.video.UpdateActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+
+    </application>
+    	      
+</manifest>

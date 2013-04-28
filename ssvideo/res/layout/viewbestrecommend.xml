@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/view_bestrecommend" 
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:orientation="vertical" >
+				<include android:id="@+id/include_galleryview" layout="@layout/viewcustomgallery" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            	<include android:id="@+id/include_pagecontrolbar" layout="@layout/pagecontrolbar" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+				
+				<ViewFlipper android:id="@+id/page_views_host"
+					android:layout_width="fill_parent" android:layout_height="fill_parent">
+					
+					<include android:id="@+id/include_pagegridremen" layout="@layout/viewpagegridremen" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+					<include android:id="@+id/include_pagegriddashi" layout="@layout/viewpagegriddashi" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+					<include android:id="@+id/include_pagegridzhexue" layout="@layout/viewpagegridzhexue" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+					<include android:id="@+id/include_pagegridjingji" layout="@layout/viewpagegridjingji" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+					<include android:id="@+id/include_pagegridlishi" layout="@layout/viewpagegridlishi" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+					<include android:id="@+id/include_pagegridwenxue" layout="@layout/viewpagegridwenxue" android:layout_height="wrap_content" android:layout_width="match_parent"/>					
+				</ViewFlipper>
+    </LinearLayout>
+</LinearLayout>

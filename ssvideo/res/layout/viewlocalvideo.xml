@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+   <LinearLayout android:id="@+id/view_categorys" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="vertical" android:background="@drawable/category_popup_shape"
+		android:layout_alignParentTop="true">
+  
+    	<HorizontalScrollView
+    		android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="none">
+        	<LinearLayout android:id="@+id/layout_categorys" 
+        	    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        	    
+        	</LinearLayout>
+    	</HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/view_localvideo" 
+		android:layout_height="fill_parent" android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_below="@+id/view_categorys"
+		>
+		<GridView android:id="@+id/gdvShowLocalVideos"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:numColumns="auto_fit" android:columnWidth="213dp"
+			android:gravity="center" android:alwaysDrawnWithCache="true"
+			android:persistentDrawingCache="animation|scrolling"
+		   	android:verticalSpacing="10dp" android:horizontalSpacing="10dp"
+		   	android:fastScrollEnabled="true" android:drawSelectorOnTop="false"
+		   	android:layoutAnimation="@anim/layout_grid_fade"
+		   	android:listSelector="@drawable/category_btn_selected_selector_xml"
+		   	>
+		</GridView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/loadingViewLocal" android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" android:layout_margin="15dp"
+        android:layout_centerInParent="true" android:visibility="gone"
+        android:background="@drawable/coners_radius_bg_xml">
+            
+        <ProgressBar
+        	android:layout_width="45dp" android:layout_height="45dp"
+         	android:gravity="center_vertical" android:layout_gravity="center_vertical"
+         	android:layout_margin="5dp" 
+        />
+        <TextView
+       		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+       		android:layout_margin="3dp" android:gravity="center_vertical"
+       		android:text="@string/progress_title" android:layout_gravity="center_vertical"
+        	style="@style/text_12_white" android:visibility="gone"
+        />
+     </LinearLayout>
+</RelativeLayout>

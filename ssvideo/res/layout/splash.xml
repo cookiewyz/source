@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:gravity="center"
+  android:background="@android:color/black"
+>
+
+	<RelativeLayout
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  >
+		<ImageView android:id="@+id/wellcome_cover" android:src="@drawable/all_wellcome_cover_common"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		></ImageView>
+	    <TextView 
+	    	android:id="@+id/tv_loading_text"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="正在载入本地视频，请耐心等待，不要退出"
+	    	android:textColor="#FFFFFF"
+	    	android:layout_centerHorizontal="true"
+	    	android:textSize="13sp"
+	    	android:layout_marginTop="450dp"
+	    	android:visibility="gone"
+	    />
+		<ProgressBar android:id="@+id/pb_loading_database"
+	    	android:layout_width="30dp" android:layout_height="30dp"
+	     	android:layout_centerHorizontal="true" android:layout_below="@id/tv_loading_text"
+	     	android:layout_marginTop="460dp" 
+	    /> 
+		<ProgressBar 
+			android:id="@+id/pb_loading_local_videos"
+	    	android:layout_width="350dp" android:layout_height="5dp"
+	    	style="?android:attr/progressBarStyleHorizontal"
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_below="@id/tv_loading_text"
+	    	android:layout_marginTop="10dp"
+	    	android:visibility="gone"
+	    />
+	
+	</RelativeLayout>
+
+</LinearLayout>
+

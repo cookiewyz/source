@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ssvideo="http://schemas.android.com/apk/res/com.chaoxing.video"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <com.chaoxing.video.TabHost android:id="@+id/tabHost"
+		android:layout_width="fill_parent" android:layout_height="64dp"
+		android:layout_gravity="bottom" 
+		android:background="@drawable/tabbar_background"
+		android:gravity="center_horizontal">
+
+		<com.chaoxing.video.TabButton android:id="@+id/tabBtnOnlineVideo"
+			android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp" android:layout_width="90dp"
+			android:layout_height="fill_parent" 
+			ssvideo:itemId="24"
+			ssvideo:icon="@drawable/tab_online_video"
+			ssvideo:label="@string/tab_online_video"
+		/>
+		<com.chaoxing.video.TabButton android:id="@+id/tabBtnBestRecommend"
+			android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp" android:layout_width="90dp"
+			android:layout_height="fill_parent" 
+			ssvideo:itemId="0"
+			ssvideo:icon="@drawable/tab_best_recommend"
+			ssvideo:label="@string/tab_best_recommend"
+			android:visibility="gone"
+		/>
+<!-- 			ssvideo:selected="true" -->
+		<com.chaoxing.video.TabButton android:id="@+id/tabBtnCategoryBrowse"
+			android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp" android:layout_width="90dp"
+			android:layout_height="fill_parent" 
+			ssvideo:itemId="1"
+			ssvideo:icon="@drawable/tab_category_browse"
+			ssvideo:label="@string/tab_category_browse"
+			android:visibility="gone"
+			/>
+		<com.chaoxing.video.TabButton android:id="@+id/tabBtnLocalVideo"
+			android:layout_marginTop="5dp" android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp" android:layout_width="90dp"
+			android:layout_height="fill_parent" 
+			ssvideo:itemId="2"
+			ssvideo:icon="@drawable/tab_local_video"
+			ssvideo:label="@string/tab_local_video"
+			/>
+					
+	</com.chaoxing.video.TabHost>  
+</LinearLayout>

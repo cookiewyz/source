@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 超星学术视频, 法源视频 -->
+    <string name="app_name">超星学术视频</string>
+    <string name="app_welcome_name">学术视频</string>
+    <string name="tab_online_video">在线视频</string>
+    <string name="tab_best_recommend">精品推荐</string>
+    <string name="tab_category_browse">分类浏览</string>
+    <string name="tab_local_video">本地视频</string>
+    <string name="toolbar_login">登录</string>
+    <string name="toolbar_recent">观看记录</string>
+    <string name="progress_title">载入中&#8230;</string>
+    <string name="video_search_tip">请输入检索词</string>
+    <string name="url_search">http://www.chaoxing.cc/ipad/getdata.aspx?action=searchtopic&amp;getcount=1&amp;kw=</string>
+    <string name="url_best_recommend">http://www.chaoxing.cc/iphone/sgetdata.aspx?action=IndexFLJSON</string>
+    <string name="url_top6_recommend">http://www.chaoxing.cc/iphone/sgetdata.aspx?action=IndexTop6</string>
+    <string name="url_online_video">http://www.lawy.com.cn</string>
+    <!--http://video.chaoxing.com, http://www.lawy.com.cn, -->
+    <string name="open_video">观看视频</string>
+    <string name="widget_6_4">超星学术视频 6×4</string>
+    <string name="widget_1">超星学术视频 1</string>
+    <string name="widget_2">超星学术视频 2</string>
+    <string name="widget_5_3">超星学术视频 5×3</string>
+    <string name="widget_5_2">超星学术视频 5×2</string>
+    <string name="widget_8_5">超星学术视频 (6×4)</string>
+    <string name="widget_5_3_2">视听盛宴</string>
+    <string name="surfaceVideo1"></string>
+    <string name="surfaceVideo2"></string>
+    <string name="surfaceVideo3"></string>
+    <string name="surfaceVideo4"></string>
+    <string name="surfaceVideo5"></string>
+    <string name="surfaceVideo6"></string>
+    
+    <string name="update_url">http://openm.chaoxing.com/apk/update/</string>
+	<string name="update_ok">现在更新</string>
+	<string name="update_cancel">稍后再说</string>
+	<string name="update_title">软件升级</string>
+	<string name="update_tip1">发现新版本：</string>
+	<string name="update_tip2">更新内容：</string>
+	<string name="update_dl_start">开始下载超星更新文件</string>
+	<string name="update_dl_ing">正在下载超星学术视频 更新文件</string>
+	<string name="update_dl_complete">超星学术视频 更新文件下载完成</string>
+	<string name="update_dl_install">请点击安装</string>
+	<string name="update_install_tip">超星学术视频 更新文件下载完成，请安装更新！</string>
+	<string name="update_install_ok">安装更新</string>
+	<string name="update_notify_msg">安装包：{1}正在下载，选择这里将进入超星学术视频 本地视频。</string>
+	<string name="update_notify_complete">《{1}》下载完成，选择这里将开始安装。</string>
+	<string name="update_notify_error">《{1}》下载出现问题，选择这里将进入超星学术视频本地视频 。</string>
+	<string name="alert_title">提示信息</string>
+	<string name="alert_ok">确定</string>
+	<string name="alert_repeat">重试</string>
+	<string name="alert_cancel">取消</string>
+	<string name="alert_close_tip">你确定退出{1}吗？</string>
+	
+	<string name="menu_item_refresh">刷新本地视频</string>
+	<string name="menu_item_checkupdate">检查更新</string>
+    <string name="menu_item_about">关于</string>
+    
+    <!-- button caption -->
+    <string name="btn_caption_all">全部</string>
+    <string name="btn_caption_score">4.90分</string>
+    <string name="btn_caption_mustplay">立即播放</string>
+    <string name="btn_caption_detailplay">点击播放</string>
+    
+    <!-- 关于 -->
+    <string name="about_ssvideo">关于超星学术视频</string>
+    <string name="name_about">超星学术视频PAD版</string>
+    <string name="version">1.6.5</string>
+    <string name="copyright">版权所有(&#169;)2013</string> 
+    <string name="copyright_co">北京读天下软件工作室</string> 
+    <string name="contact_pone_title">客服:</string>
+    <string name="contact_pone">86&#8211;10&#8211;51665380</string>
+    <string name="contact_mail_title">邮箱:</string>
+    <string name="contact_mail">superstar@chaoxing.com</string>
+    <string name="contact_web_title">主页:</string>
+    <string name="contact_web">http://www.chaoxing.com</string>
+    
+</resources>

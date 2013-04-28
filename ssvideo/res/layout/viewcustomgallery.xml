@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativelayoutgallery"
+    	android:layout_height="350dp" android:layout_width="fill_parent" 
+    	android:orientation="vertical" 
+    	android:weightSum="1" android:layout_gravity="top">
+    	<!-- com.chaoxing.video.CustomScrollGallery -->
+        <com.chaoxing.video.CustomScrollGallery android:id="@+id/customgallery"         	
+        	android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	android:spacing="5dp"
+        />
+	    
+		<!-- @android:drawable/editbox_dropdown_dark_frame, android:background="@drawable/coners_radius_bg_xml" -->        				  
+		<LinearLayout android:id="@+id/loadingViewGallery" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_margin="15dp"
+	    	android:layout_centerInParent="true"
+	    	android:background="@drawable/coners_radius_bg_xml">
+	        
+	    	<ProgressBar
+	    		android:layout_width="30dp" android:layout_height="30dp"
+	     		android:gravity="center_vertical" android:layout_gravity="center_vertical"
+	     		android:layout_margin="5dp" 
+	    	/>
+	    	<TextView
+	   			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	   			android:layout_margin="3dp" android:gravity="center_vertical"
+	   			android:text="@string/progress_title" android:layout_gravity="center_vertical"
+	    		style="@style/text_12_white" android:visibility="gone"
+	    	/>
+		</LinearLayout>   
+	</RelativeLayout>
+</LinearLayout>

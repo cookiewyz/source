@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+    />
+
+	<TextView android:id="@+id/txtDetailbackground"
+			android:layout_width="fill_parent" android:layout_height="120dp"  
+			android:padding="0dp" android:gravity="left"
+			android:layout_alignParentBottom="true"
+			android:background="#8c323232"
+	/>
+	<!-- android:ellipsize="end" -->
+	<TextView android:id="@+id/txtDetail"
+		android:layout_width="fill_parent" android:layout_height="110dp"  
+		android:padding="7dp" android:gravity="left"
+		android:layout_alignParentBottom="true" android:scrollbars="none"
+		android:layout_marginLeft="25dp" android:maxLines="6" 
+		android:layout_marginRight="10dp" android:layout_marginBottom="5dp"
+		android:layout_toLeftOf="@+id/btndetailplay"					
+		style="@style/text_18_white"
+	/>
+
+    <Button
+        android:id="@+id/btndetailplay"
+        android:layout_width="101dp"
+        android:layout_height="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtDetail"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/all_detail_play_button_nopressed_xml"
+        android:paddingLeft="15dp"
+        android:text="@string/btn_caption_detailplay"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+</RelativeLayout>
