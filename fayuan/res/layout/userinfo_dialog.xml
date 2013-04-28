@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"   
+	android:layout_width="500dp"   
+	android:layout_height="wrap_content"   
+	android:orientation="vertical"
+	android:background="@drawable/ranks_view_cell_back"
+	>  
+
+	<TextView android:id="@+id/txt_msg"      
+		android:layout_height="20dp" android:layout_width="wrap_content"      
+		android:layout_marginLeft="120dp" android:layout_marginRight="40dp"
+		android:layout_marginTop="0dp" android:gravity="left" 
+		android:text="" 
+	/>   
+			
+	<TextView android:id="@+id/label_name"      
+		android:layout_height="23dp" android:layout_width="100dp"      
+		android:layout_marginLeft="130dp" android:layout_marginRight="40dp"
+		android:layout_marginTop="10dp" android:gravity="left" 
+		android:text="用户名：" android:layout_below="@+id/txt_msg" 
+	/>
+	<TextView android:id="@+id/txt_name"      
+		android:layout_height="23dp" android:layout_width="200dp"      
+		android:layout_marginLeft="10dp" android:layout_marginTop="10dp"             
+		android:text="xin" android:gravity="left" 
+		android:layout_toRightOf="@+id/label_name" android:layout_below="@+id/txt_msg"
+		android:singleLine="true" android:ellipsize="end"
+	/>
+	
+	<TextView android:id="@+id/label_state"      
+		android:layout_height="23dp" android:layout_width="100dp"      
+		android:layout_marginLeft="130dp" android:layout_marginRight="40dp"
+		android:layout_marginTop="10dp" android:gravity="left"
+		android:text="状    态：" android:layout_below="@+id/label_name" 
+	/> 
+	<TextView android:id="@+id/txt_state"      
+		android:layout_height="23dp" android:layout_width="200dp"      
+		android:layout_marginLeft="10dp" android:layout_marginTop="10dp"             
+		android:text="离线" android:gravity="left"
+		android:layout_toRightOf="@+id/label_state" android:layout_below="@+id/txt_name"
+		android:singleLine="true" android:ellipsize="end" 
+	/>  
+	
+	<TextView android:id="@+id/label_type"      
+		android:layout_height="23dp" android:layout_width="100dp"      
+		android:layout_marginLeft="130dp" android:layout_marginRight="40dp"
+		android:layout_marginTop="10dp" android:gravity="left"
+		android:text="会员类型：" android:layout_below="@+id/label_state"
+	/>     
+	<TextView android:id="@+id/txt_type"      
+		android:layout_height="23dp" android:layout_width="200dp"      
+		android:layout_marginLeft="10dp" android:layout_marginTop="10dp"             
+		android:text="普通会员" android:gravity="left" 
+		android:layout_toRightOf="@+id/label_type" android:layout_below="@+id/txt_state" 
+		android:singleLine="true" android:ellipsize="end"
+	/>
+		
+	<TextView android:id="@+id/label_coin"      
+		android:layout_height="23dp" android:layout_width="100dp"      
+		android:layout_marginLeft="130dp" android:layout_marginRight="40dp"
+		android:layout_marginTop="10dp" android:gravity="left"
+		android:text="星币数：" android:layout_below="@+id/label_type"
+	/>  
+	<TextView android:id="@+id/txt_coin"      
+		android:layout_height="23dp" android:layout_width="200dp"      
+		android:layout_marginLeft="10dp" android:layout_marginTop="10dp"             
+		android:text="0" android:gravity="left" 
+		android:layout_toRightOf="@+id/label_coin" android:layout_below="@+id/txt_type"
+		android:singleLine="true" android:ellipsize="end" 
+	/> 
+	
+	<TextView android:id="@+id/txt_errormsg"      
+		android:layout_height="20dp" android:layout_width="300dp"      
+		android:layout_marginLeft="130dp" android:layout_marginTop="5dp"             
+		android:text="" android:gravity="left" android:layout_below="@+id/label_coin" 
+		android:singleLine="true" android:ellipsize="end"
+	/>
+	
+	<Button android:id="@+id/btnlogout" 
+		android:layout_height="32dp" android:layout_width="130dp" 
+		android:background="@drawable/all_red_logout_button_xml" android:layout_marginTop="5dp" 
+		android:textColor="#FFF" android:textSize="13sp" 
+		android:layout_below="@+id/txt_errormsg" 
+		android:layout_marginLeft="100dp"
+		android:text="注销" 
+	/>
+	
+	<Button android:id="@+id/btncancel" 
+		android:layout_height="32dp" android:layout_width="130dp" 
+		android:background="@drawable/all_blue_login_button_xml" android:layout_marginTop="5dp"
+		android:textColor="#FFF" android:textSize="13sp"
+		android:layout_below="@+id/txt_errormsg" android:layout_toRightOf="@+id/btnlogout"
+		android:layout_marginLeft="55dp"
+		android:text="取消"   
+	/>     
+	
+	<TextView android:id="@+id/txt_bottom"      
+		android:layout_height="20dp" android:layout_width="20dp"  
+		android:text="" android:layout_below="@+id/btnlogout" 
+		android:layout_marginTop="10dp"  
+	/>	
+	<ProgressBar android:id="@+id/progressBarLogout" 
+		android:layout_height="30dp" android:layout_width="30dp" 
+		android:layout_below="@+id/label_state" android:layout_centerHorizontal="true"
+		style="?android:attr/progressBarStyleSmall" android:visibility="gone"
+	/>	
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" name="btn_categorys" android:shape="rectangle">
+	<gradient 
+		android:startColor="#A0082E54"
+		android:endColor="#A0082E54"
+		android:angle="270.0">
+	</gradient>
+	<corners 
+        android:topRightRadius="0dp"
+        android:bottomLeftRadius="5dp"
+        android:topLeftRadius="0dp"
+        android:bottomRightRadius="5dp"
+ 	/>
+	
+</shape>

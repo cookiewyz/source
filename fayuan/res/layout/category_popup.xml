@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll_category"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:gravity="center_horizontal"
+  android:background="@drawable/category_popup_shape"
+  android:padding="10dp"
+  >
+  
+  <Button 
+  	android:id="@+id/bt_category_all"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="@string/btn_caption_all"
+  	android:layout_marginTop="10dp"
+  	android:layout_marginBottom="10dp"
+  	style="@style/text_24_white"
+  	android:background="@drawable/category_btn_all_selector_xml"
+  />
+  
+  <!-- <Button 
+  	android:id="@+id/bt_series_history"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="历史"
+  	android:layout_marginTop="10dp"
+  	style="@style/text_24_white"
+  	android:background="@drawable/category_btn_selector_xml"
+  />
+  <Button 
+  	android:id="@+id/bt_series_culture"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="文化"
+  	android:layout_marginTop="10dp"
+  	style="@style/text_24_white"
+	android:background="@drawable/category_btn_selector_xml"
+  />
+  <Button 
+  	android:id="@+id/bt_series_philosophy"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="哲学"
+  	android:layout_marginTop="10dp"
+  	style="@style/text_24_white"
+  	android:background="@drawable/category_btn_selector_xml"
+  />
+  <Button 
+  	android:id="@+id/bt_series_polity_law"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="政法"
+  	android:layout_marginTop="10dp"
+  	style="@style/text_24_white"
+  	android:background="@drawable/category_btn_selector_xml"
+  />
+  <Button 
+  	android:id="@+id/bt_series_art"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="艺术"
+  	android:layout_marginTop="10dp"
+  	style="@style/text_24_white"
+  	android:background="@drawable/category_btn_selector_xml"
+  />
+  <Button 
+  	android:id="@+id/bt_series_literature"
+  	android:layout_width="200dp"
+  	android:layout_height="50dp"
+  	android:text="文学"
+  	android:layout_marginTop="10dp"
+  	android:layout_marginBottom="5dp"
+  	style="@style/text_24_white"
+  	android:background="@drawable/category_btn_selector_xml"
+  /> -->
+  
+    
+</LinearLayout>

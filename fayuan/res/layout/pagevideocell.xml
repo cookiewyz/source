@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent">
+	<ImageView android:id="@+id/video_cover"   
+		android:layout_width="180dp" android:layout_height="115dp"
+		android:layout_centerHorizontal="true" android:src="@drawable/all_default_cover"
+		android:layout_marginTop="25dp">
+	</ImageView>
+	<RatingBar android:id="@+id/star_Rating_Bar"  
+		android:layout_width="wrap_content" android:isIndicator="false"  
+		android:numStars="5" android:rating="4.5"  
+		style="?android:attr/ratingBarStyleSmall" 
+		android:layout_marginTop="10dp" android:layout_below="@+id/video_cover" 
+		android:layout_centerHorizontal="true" android:layout_height="wrap_content">   
+	</RatingBar>
+	<TextView android:id="@+id/star_score" 
+		android:layout_width="50dp" android:layout_height="wrap_content"
+		style="@style/text_16_white" android:layout_toRightOf="@+id/star_Rating_Bar"
+		android:layout_marginTop="8dp"  android:layout_marginLeft="6dp" 
+		android:text="4.90分" android:layout_centerHorizontal="true"
+		android:layout_below="@+id/video_cover"
+	/>
+	<TextView android:id="@+id/video_name" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		style="@style/text_18_white" android:layout_below="@+id/star_Rating_Bar"
+		android:layout_marginTop="6dp" android:gravity="center"   
+		android:text="秦汉学术思想与文化" android:layout_centerHorizontal="true"
+		android:ellipsize="end"
+	/>
+	<TextView android:id="@+id/video_bottom_line" 
+		android:layout_width="180dp" android:layout_height="31dp"
+		android:layout_below="@+id/video_name"
+		android:layout_marginTop="6dp" android:gravity="center"   
+		android:text="          " android:layout_centerHorizontal="true"
+	/>
+</RelativeLayout> 

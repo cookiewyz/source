@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="AbsAdapterView">
+		<attr name="columnWidth" format="dimension" />
+		<attr name="horizontalSpacing" format="dimension" />
+	</declare-styleable>
+
+	<declare-styleable name="GridView">
+		<attr name="verticalSpacing" format="dimension" />
+	</declare-styleable>
+	
+  <declare-styleable name="TabButton">
+		<attr name="itemId" format="integer"/>
+		<attr format="reference" name="icon"/>
+		<attr name="label" format="string"/>
+		<attr format="boolean" name="selected"/>
+	</declare-styleable>
+	
+	<declare-styleable name="MaskView">
+		<attr format="boolean" name="frame"/>
+		<attr name="widthPercentToParent" format="float" />
+		<attr name="heightPercentToParent" format="float" />
+	</declare-styleable>
+	
+	<declare-styleable name="Gallery">
+    	<attr name="android:galleryItemBackground" />
+  	</declare-styleable> 	  
+</resources>

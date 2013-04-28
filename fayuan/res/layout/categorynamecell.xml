@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="51dp" 
+	android:layout_width="fill_parent">
+	
+	<ImageView android:id="@+id/cate_cover"   
+		android:layout_width="65dp" android:layout_height="44dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true"
+ 		android:background="@drawable/first_page_subject"
+		android:scaleType="fitXY"
+	/>
+<!-- 		android:background="@drawable/all_category_button_xml" -->
+	
+	<TextView android:id="@+id/txt_name" 
+		android:layout_width="fill_parent" android:layout_height="44dp" 
+		android:text="全部" android:layout_centerHorizontal="true"
+		android:textSize="13sp" android:textColor="#FFF"
+		android:gravity="center" android:layout_centerInParent="true"
+	/>
+	
+</RelativeLayout> 

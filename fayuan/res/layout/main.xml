@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ssvideo="http://schemas.android.com/apk/res/com.chaoxing.video.fayuan"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_view_background"
+    >
+    
+    <include android:id="@+id/include_toolbartop" layout="@layout/toolbartop" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+ 
+	<RelativeLayout android:layout_width="fill_parent" android:gravity="center_horizontal"
+		android:layout_height="fill_parent" android:layout_weight="1">
+
+		<ViewFlipper android:id="@+id/views_host"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<include android:id="@+id/include_bestrecommend" layout="@layout/viewbestrecommend" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+			<include android:id="@+id/include_categorybrowse" layout="@layout/viewcategorybrowse" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+    		<include android:id="@+id/include_localvideo" layout="@layout/viewlocalvideo" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+			<include android:id="@+id/include_viewsearch" layout="@layout/viewsearch" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+			<include android:id="@+id/include_retentdialog" layout="@layout/recent_play_dialog" android:layout_height="wrap_content" android:layout_width="300dp"/>
+		</ViewFlipper>
+		<include android:id="@+id/include_searchtext" layout="@layout/viewsearchtext" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+
+	</RelativeLayout>
+    <include android:id="@+id/include_tabcontrolbar" layout="@layout/tabcontrolbar" android:layout_height="wrap_content" android:layout_width="match_parent"/> 
+	
+</LinearLayout>

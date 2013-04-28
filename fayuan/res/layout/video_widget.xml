@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="602dp" android:layout_height="398dp"
+	android:orientation="vertical" android:background="@drawable/widget_background"
+	android:paddingRight="20dp" android:paddingLeft="0dp" android:layout_gravity="center">
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="80dp"
+		>
+		<ImageView 
+			android:id="@+id/widget_logo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"
+    		android:layout_marginTop="10dp"
+		/>
+		<ImageView 
+			android:id="@+id/widget_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/widget_logo"
+			android:layout_marginTop="10dp"
+		/>
+		<Button 
+			android:layout_height="50dp"
+			android:layout_width="wrap_content"
+			android:id="@+id/classify_internet" android:layout_marginBottom="10dp"
+			android:background="@drawable/video_widget_selected_xml"
+			android:text="在线视频"  
+			style="@style/text_24_white"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentBottom="true"
+			/>
+		<Button 
+			android:layout_height="50dp"
+			android:layout_width="wrap_content"
+			android:id="@+id/classify_local" android:layout_marginBottom="10dp"
+			android:background="@drawable/video_widget_selected_xml"
+			android:text="本地视频"  
+			style="@style/text_24_white"
+			android:layout_toLeftOf="@id/classify_internet"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentBottom="true"
+			/>
+	</RelativeLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		 android:paddingTop="0dp">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="100dp" android:layout_height="fill_parent"
+			android:paddingRight="0dp" android:paddingLeft="15dp" android:paddingTop="5dp">
+			<Button style="@style/video_widget_btn_style" android:text=""  
+				android:id="@+id/classify_0" android:layout_marginTop="2dp"
+				android:background="@drawable/video_widget_selected_xml"
+				/>
+			<Button style="@style/video_widget_btn_style" android:text=""  
+				android:id="@+id/classify_1" android:layout_marginTop="5dp"
+				android:background="@drawable/video_widget_selected_xml"
+				/>
+			<Button style="@style/video_widget_btn_style" android:text=""  
+				android:id="@+id/classify_2" android:layout_marginTop="5dp"
+				android:background="@drawable/video_widget_selected_xml"
+				/>
+			<Button style="@style/video_widget_btn_style" android:text=""  
+				android:id="@+id/classify_3" android:layout_marginTop="5dp"
+				android:background="@drawable/video_widget_selected_xml"
+				/>
+			<Button style="@style/video_widget_btn_style" android:text=""  
+				android:id="@+id/classify_4" android:layout_marginTop="5dp"
+				android:background="@drawable/video_widget_selected_xml"
+				/>
+			<Button style="@style/video_widget_btn_style" android:text=""  
+				android:id="@+id/classify_5" android:layout_marginTop="5dp"
+				android:background="@drawable/video_widget_selected_xml"
+				/>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_alignParentRight="true" android:layout_weight="1"
+			>
+
+			<!-- the first row -->
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="0dp"
+				>
+				
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					>
+					<ImageButton style="@style/video_widget_video" android:id="@+id/book_0"/>
+					<TextView 
+						android:id="@+id/book_tittle_0"
+						android:layout_height="wrap_content"
+						android:layout_width="145dp"
+						android:text="@string/surfaceVideo1"
+						android:layout_marginLeft="10dp"
+						style="@style/text_24_white"
+						android:lines="2"
+					/>
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					>
+					<ImageButton style="@style/video_widget_video" android:id="@+id/book_1"/>
+					<TextView 
+						android:id="@+id/book_tittle_1"
+						android:layout_height="wrap_content"
+						android:layout_width="140dp"
+						android:text="@string/surfaceVideo2"
+						android:layout_marginLeft="10dp"
+						style="@style/text_24_white"
+						android:lines="2"
+					/>
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					>
+					<ImageButton style="@style/video_widget_video" android:id="@+id/book_2"/>
+					<TextView 
+						android:id="@+id/book_tittle_2"
+						android:layout_height="wrap_content"
+						android:layout_width="140dp"
+						android:text="@string/surfaceVideo3"
+						android:layout_marginLeft="10dp"
+						style="@style/text_24_white"
+						android:lines="2"
+					/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<!-- the second row -->
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				>
+                <LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					>
+					<ImageButton style="@style/video_widget_video" android:id="@+id/book_3"/>
+					<TextView 
+						android:id="@+id/book_tittle_3"
+						android:layout_height="wrap_content"
+						android:layout_width="140dp"
+						android:text="@string/surfaceVideo4"
+						android:layout_marginLeft="10dp"
+						style="@style/text_24_white"
+						android:lines="2"
+					/>
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					>
+	                <ImageButton style="@style/video_widget_video" android:id="@+id/book_4"/>
+					<TextView 
+						android:id="@+id/book_tittle_4"
+						android:layout_height="wrap_content"
+						android:layout_width="140dp"
+						android:text="@string/surfaceVideo5"
+						android:layout_marginLeft="10dp"
+						style="@style/text_24_white"
+						android:lines="2"
+					/>
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					>
+	                <ImageButton style="@style/video_widget_video" android:id="@+id/book_5"/>
+					<TextView 
+						android:id="@+id/book_tittle_5"
+						android:layout_height="wrap_content"
+						android:layout_width="140dp"
+						android:text="@string/surfaceVideo6"
+						android:layout_marginLeft="10dp"
+						style="@style/text_24_white"
+						android:lines="2"
+					/>
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

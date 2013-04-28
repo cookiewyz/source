@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ssvideo="http://schemas.android.com/apk/res/com.chaoxing.video.fayuan"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+		<LinearLayout android:orientation="vertical" android:background="@drawable/all_view_background"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<include android:id="@+id/include_catenamescrollbar" layout="@layout/categorynamescrollbar" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+			<GridView android:id="@+id/categoryvideolist" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" 
+				android:background="@drawable/all_view_background" 
+				android:verticalSpacing="1dp" 
+				android:stretchMode="columnWidth"
+				android:gravity="center"
+				android:listSelector="@drawable/grid_selector_xml"
+				android:persistentDrawingCache="all" 
+				android:layoutAnimation="@anim/layout_grid_fade"/>
+				
+				<LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+        			<TextView android:text="TextView" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    			</LinearLayout>
+		</LinearLayout>
+
+        <LinearLayout android:id="@+id/loadingViewCategory" android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/coners_radius_bg_xml" >
+            
+        <ProgressBar android:id="@+id/progressBarCategory"
+        	android:layout_width="45dp" android:layout_height="45dp"
+         	android:gravity="center_vertical" android:layout_gravity="center_vertical"
+         	android:layout_margin="5dp" android:max="100"
+        />
+        <TextView
+       		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+       		android:layout_margin="3dp" android:gravity="center_vertical"
+       		android:text="@string/progress_title" android:layout_gravity="center_vertical"
+        	style="@style/text_12_white" android:visibility="gone"
+        />
+     </LinearLayout>
+</RelativeLayout>

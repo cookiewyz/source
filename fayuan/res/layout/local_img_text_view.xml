@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/local_video_list_linearLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical" android:paddingTop="5dp"
+        android:background="@drawable/rect_white_trans_back_shape"
+        android:gravity="center"
+        >
+        <RelativeLayout 
+        	android:id="@+id/local_video_imgs_relativeLayout"
+        	 android:layout_width="wrap_content" android:layout_height="wrap_content"
+        >
+	        <ImageView android:id="@+id/iv_local_video_img" 
+	        		android:layout_width="213dp"
+	                android:layout_height="160dp"
+	                android:layout_marginLeft="10dp"
+	                >
+	        </ImageView>
+	        <ImageView android:id="@+id/iv_local_video_img_del" 
+	        		android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                
+	                android:layout_alignParentRight="true"
+	                android:layout_marginTop="20dp"
+	                android:layout_marginRight="20dp"
+	                android:visibility="visible"
+	                >
+	        </ImageView>
+	        
+	        
+        	<LinearLayout 
+	        	android:id="@+id/ll_download_status"
+	        	android:layout_width="213dp"
+	        	android:layout_height="160dp"
+	        	android:background="#A0000000"
+	        	android:layout_marginLeft="10dp"
+        		android:orientation="horizontal"
+        		android:gravity="center"
+        	>
+	        	<TextView 
+	        		android:id="@+id/tv_download_status"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:textColor="#FFFFFF"
+	        		android:layout_gravity="center"
+	        	/>
+        	</LinearLayout>
+	       
+	        
+	        <RelativeLayout 
+	        	android:id="@+id/rl_download_progress"
+	        	android:layout_width="213dp"
+	        	android:layout_height="40dp"
+	        	android:background="#E0E0FFFF"
+	        	android:layout_marginLeft="10dp"
+	        	android:layout_marginTop="100dp"
+	        >
+	        	<ProgressBar 
+	        		android:id="@+id/pb_download_progress"
+	        		android:layout_width="200dp"
+	        		android:layout_height="10dp"
+	        		style="?android:attr/progressBarStyleHorizontal"
+	        		android:layout_marginLeft="8dp"
+	        		android:layout_marginTop="5dp"
+	        		android:max="10000"
+	        		android:progressDrawable="@drawable/progressbar_style"
+	        	/>
+	        	<TextView 
+	        		android:id="@+id/tv_download_size"
+	        		android:layout_height="wrap_content"
+	        		android:layout_width="wrap_content"
+	        		android:layout_below="@id/pb_download_progress"
+	        		android:layout_marginTop="5dp"
+	        		android:layout_centerHorizontal="true"
+	        		android:textColor="#EEAD0E"
+	        	/>
+	        </RelativeLayout>
+        
+        </RelativeLayout>
+        <LinearLayout 
+        	android:id="@+id/local_video_list_text_linearLayout"
+	        android:layout_width="213dp" 
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+        	android:layout_marginLeft="10dp"
+        	android:gravity="center_horizontal"
+        >
+	        <TextView android:id="@+id/tv_local_video_title" android:layout_width="213dp"
+	                android:layout_height="wrap_content" android:textColor="#FFFFFF"
+	                android:textSize="16sp" android:layout_gravity="center_horizontal"
+	                android:lines="2" android:ellipsize="marquee"
+	                android:marqueeRepeatLimit="marquee_forever"
+	                >
+	        </TextView>
+	        <TextView 
+	        	android:id="@+id/tv_local_video_size"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="16sp"
+	        	android:textColor="#FFFFFF"
+	        	android:layout_marginTop="8dp"
+	        	android:visibility="gone"
+	        />
+        </LinearLayout>
+</LinearLayout>

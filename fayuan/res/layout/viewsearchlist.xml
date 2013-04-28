@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ssvideo="http://schemas.android.com/apk/res/com.chaoxing.video.fayuan"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+		<LinearLayout android:orientation="vertical" android:background="@drawable/all_view_background"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<HorizontalScrollView android:id="@+id/horizontalScrollViewfirstlevel" 
+    			android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="none">
+        		<LinearLayout android:id="@+id/layout_cateNamefirstlevel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal"></LinearLayout>
+    		</HorizontalScrollView>
+			<GridView android:id="@+id/searchvideolist" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" 
+				android:background="@drawable/all_view_background" 
+				android:verticalSpacing="1dp" 
+				android:stretchMode="columnWidth"
+				android:gravity="center"
+				android:listSelector="@drawable/grid_selector_xml"
+				android:persistentDrawingCache="all" 
+				android:layoutAnimation="@anim/layout_grid_fade"/>
+		</LinearLayout>
+		
+        <LinearLayout android:id="@+id/loadingViewSearch" android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/coners_radius_bg_xml" >
+            
+        <ProgressBar android:id="@+id/progressBarSearch"
+        	android:layout_width="45dp" android:layout_height="45dp"
+         	android:gravity="center_vertical" android:layout_gravity="center_vertical"
+         	android:layout_margin="5dp" android:max="100"
+        />
+        <TextView
+       		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+       		android:layout_margin="3dp" android:gravity="center_vertical"
+       		android:text="@string/progress_title" android:layout_gravity="center_vertical"
+        	style="@style/text_12_white" android:visibility="gone"
+        />
+     </LinearLayout>	
+</RelativeLayout>

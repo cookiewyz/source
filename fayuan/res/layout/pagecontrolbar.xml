@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ssvideo="http://schemas.android.com/apk/res/com.chaoxing.video.fayuan"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<com.chaoxing.video.PageButtonHost android:id="@+id/pageButtonHost"
+					android:layout_width="fill_parent" android:layout_height="44dp"
+					android:layout_gravity="top" 
+					android:background="@drawable/nav"
+					android:weightSum="6">	
+				<com.chaoxing.video.PageButton android:id="@+id/pageBtnReMen"
+					android:layout_marginRight="0dp" android:layout_width="90dp"
+					android:layout_height="fill_parent" android:layout_marginLeft="0dp" 
+					android:padding="0dp" android:layout_weight="0"  
+					ssvideo:selected="true" ssvideo:itemId="0" ssvideo:label="宪法"/>
+				<com.chaoxing.video.PageButton android:id="@+id/pageBtnDaShi"
+					android:layout_marginRight="0dp" android:layout_width="90dp"
+					android:layout_height="fill_parent" android:layout_marginLeft="0dp" 
+					android:layout_weight="0"
+					android:padding="0dp" ssvideo:itemId="1" ssvideo:label="刑法"/>
+				<com.chaoxing.video.PageButton android:id="@+id/pageBtnZheXue"
+					android:layout_marginRight="0dp" android:layout_width="90dp"
+					android:layout_height="fill_parent" android:layout_marginLeft="0dp" 
+					android:layout_weight="0"
+					android:padding="0dp" ssvideo:itemId="2" ssvideo:label="民商法"/>
+				<com.chaoxing.video.PageButton android:id="@+id/pageBtnJingJi"
+					android:layout_marginRight="0dp" android:layout_width="90dp"
+					android:layout_height="fill_parent" android:layout_marginLeft="0dp" 
+					android:layout_weight="0"
+					android:padding="0dp" ssvideo:itemId="3" ssvideo:label="经济法"/>
+				<com.chaoxing.video.PageButton android:id="@+id/pageBtnLiShi"
+					android:layout_marginRight="0dp" android:layout_width="90dp"
+					android:layout_height="fill_parent" android:layout_marginLeft="0dp" 
+					android:layout_weight="0"
+					android:padding="0dp" ssvideo:itemId="4" ssvideo:label="诉讼法"/>
+				<com.chaoxing.video.PageButton android:id="@+id/pageBtnWenXue"
+					android:layout_marginRight="0dp" android:layout_width="90dp"
+					android:layout_height="fill_parent" android:layout_marginLeft="0dp" 
+					android:layout_weight="0"
+					android:padding="0dp" ssvideo:itemId="5" ssvideo:label="行政法"/>
+	</com.chaoxing.video.PageButtonHost>  
+</LinearLayout>

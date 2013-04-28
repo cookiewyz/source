@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"   
+	android:layout_width="500dp"   
+	android:layout_height="wrap_content"   
+	android:orientation="vertical"
+	android:background="@drawable/ranks_view_cell_back"
+	>  
+
+	<TextView android:id="@+id/txt_msg"      
+		android:layout_height="23dp" android:layout_width="wrap_content"      
+		android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+		android:layout_marginTop="0dp"
+		android:text="" android:gravity="left" 
+		android:singleLine="true" android:ellipsize="end"
+	/>   
+			
+	<EditText android:id="@+id/txt_username"      
+		android:layout_height="wrap_content" android:layout_width="470dp"      
+		android:layout_marginLeft="40dp" android:layout_marginRight="40dp"      
+		android:autoText="false" android:capitalize="none" 
+		android:gravity="fill_horizontal" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@+id/txt_msg"   
+		android:hint="用户名(20个英文字母或10个汉字以内)" android:layout_marginTop="6dp" 
+		android:inputType="textPersonName"  
+	/>     
+	
+	<EditText android:id="@+id/txt_password"
+		android:layout_height="wrap_content" android:layout_width="470dp"    
+		android:layout_marginLeft="40dp" android:layout_marginRight="40dp"  
+		android:autoText="false" android:capitalize="none" 
+		android:gravity="fill_horizontal" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@+id/txt_username"
+		android:hint="密码(6至16英文字母或数字，且区分大小写)" android:layout_marginTop="5dp"
+		android:inputType="textPassword"  
+	/>
+	
+	<EditText android:id="@+id/txt_repassword"
+		android:layout_height="wrap_content" android:layout_width="470dp"    
+		android:layout_marginLeft="40dp" android:layout_marginRight="40dp"  
+		android:autoText="false" android:capitalize="none" 
+		android:gravity="fill_horizontal" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@+id/txt_password"
+		android:hint="确认密码" android:layout_marginTop="5dp"  
+		android:inputType="textPassword"
+	/>             
+	
+	<EditText android:id="@+id/txt_email"
+		android:layout_height="wrap_content" android:layout_width="470dp"    
+		android:layout_marginLeft="40dp" android:layout_marginRight="40dp"  
+		android:autoText="false" android:capitalize="none" 
+		android:gravity="fill_horizontal" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@+id/txt_repassword"
+		android:hint="邮箱" android:layout_marginTop="5dp" 
+		android:inputType="textEmailAddress" 
+	/>                          
+		
+	<TextView android:id="@+id/txt_errormsg"      
+		android:layout_height="wrap_content" android:layout_width="wrap_content"      
+		android:layout_marginLeft="40dp" android:layout_marginTop="10dp"             
+		android:text="" android:gravity="left" android:layout_below="@+id/txt_email" 
+		android:singleLine="true" android:ellipsize="end"
+	/>
+	
+	<Button android:id="@+id/btnregister" 
+		android:layout_height="32dp" android:layout_width="130dp" 
+		android:background="@drawable/all_red_logout_button_xml" android:layout_marginTop="16dp"
+		android:textColor="#FFF" android:textSize="13sp"
+		android:layout_below="@+id/txt_errormsg" android:layout_toRightOf="@+id/btnlogin" 
+		android:layout_marginLeft="100dp"
+		android:text="注册"
+	/>
+	
+	<Button android:id="@+id/btncancel" 
+		android:layout_height="32dp" android:layout_width="130dp" 
+		android:background="@drawable/all_blue_login_button_xml" android:layout_marginTop="16dp"
+		android:textColor="#FFF" android:textSize="13sp"
+		android:layout_below="@+id/txt_errormsg" android:layout_toRightOf="@+id/btnregister"
+		android:layout_marginLeft="40dp"
+		android:text="取消"   
+	/>     
+	
+	<TextView android:id="@+id/txt_bottom"      
+		android:layout_height="20dp" android:layout_width="20dp"  
+		android:text="" android:layout_below="@+id/btnregister" 
+		android:layout_marginTop="10dp"  
+	/>
+	<ProgressBar android:id="@+id/progressBarRegister" 
+		android:layout_height="30dp" android:layout_width="30dp" 
+		android:layout_below="@+id/txt_password" android:layout_centerHorizontal="true"
+		style="?android:attr/progressBarStyleSmall" android:visibility="gone"
+	/>	
+</RelativeLayout>
